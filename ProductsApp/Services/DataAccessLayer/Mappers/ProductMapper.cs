@@ -1,4 +1,11 @@
-﻿using ProductsApp.Models.DomainModels;
+﻿/*
+ *Arie Gerard 
+ * CST - 350
+ * Nov 10, 2024
+ * ProductsApp
+ * Activity 5 Guide
+ */
+using ProductsApp.Models.DomainModels;
 using ProductsApp.Models.ViewModels;
 
 namespace ProductsApp.Services.DataAccessLayer.Mappers

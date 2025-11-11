@@ -1,4 +1,11 @@
-﻿using System.ComponentModel;
+﻿/*
+ *Arie Gerard 
+ * CST - 350
+ * Nov 10, 2024
+ * ProductsApp
+ * Activity 5 Guide
+ */
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProductsApp.Models.ViewModels

@@ -1,4 +1,10 @@
-﻿
+﻿/*
+ *Arie Gerard 
+ * CST - 350
+ * Nov 10, 2024
+ * ProductsApp
+ * Activity 5 Guide
+ */
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Data.SqlClient;
 using ProductsApp.Models.DomainModels;
@@ -10,9 +16,13 @@ namespace ProductsApp.Services.DataAccessLayer
     /// </summary>
     public class ProductDAO
     {
-        private readonly string _connectionString = @"Data Source=np:\\\\.\\pipe\\LOCALDB#1370C7B9\\tsql\\query;Initial Catalog=ShopTillYouDrop;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+        private readonly string _connectionString = @"Data Source=np:\\.\pipe\LOCALDB#1370C7B9\tsql\query;Initial Catalog=ShopTillYouDrop;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
         string query;
 
+        /// <summary>
+        /// Method to get all products
+        /// </summary>
+        /// <returns></returns>
         public List<ProductDomainModel> GetAllProducts()
         {
             // Declare and Init
@@ -20,7 +30,7 @@ namespace ProductsApp.Services.DataAccessLayer
             ProductDomainModel product;
 
             // Define the query 
-            query = "SELECT * FROM dbo.Products";
+            query = "SELECT * FROM dbo.Product";
             // Set up a SQL command
            using (SqlConnection connection = new SqlConnection(_connectionString))
             {

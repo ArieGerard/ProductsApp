@@ -1,3 +1,10 @@
+/*
+ *Arie Gerard 
+ * CST - 350
+ * Nov 10, 2024
+ * ProductsApp
+ * Activity 5 Guide
+ */
 using ProductsApp.Services.BuisnessLogicLayer;
 using ProductsApp.Services.DataAccessLayer;
 
