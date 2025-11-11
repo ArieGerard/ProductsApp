@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ProductsApp.Models;
+using ProductsApp.Models.ViewModels;
 
 namespace ProductsApp.Controllers
 {

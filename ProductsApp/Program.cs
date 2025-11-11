@@ -1,3 +1,4 @@
+using ProductsApp.Services.BuisnessLogicLayer;
 using ProductsApp.Services.DataAccessLayer;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ProductDAO>();
+
+builder.Services.AddScoped<ProductLogic>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
