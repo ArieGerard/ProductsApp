@@ -39,15 +39,11 @@ namespace ProductsApp.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateProduct([FromBody] ProductViewModel product)
+        public ActionResult CreateProduct(ProductViewModel product)
         {
-            // Call the CreateProduct method  in product Logic 
-            // I think this was a challange that we did not have to do 
-            // _productLogic.CreateProduct(product);
-
-            // Return an Ok result
+            // Execute the CreateProduct from _productLogic
+            _productLogic.CreateProduct(product);
             return Ok();
-
         }
     }
 }

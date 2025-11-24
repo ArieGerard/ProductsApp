@@ -49,6 +49,22 @@ namespace ProductsApp.Services.BuisnessLogicLayer
 
         }
 
+        /// <summary>
+        /// Create a new product in the database
+        /// </summary>
+        /// <param name="productViewModel">The product view model to create</param>
+        public void CreateProduct(ProductViewModel productViewModel)
+        {
+            // Declare and Init
+            ProductDomainModel domainProduct;
+
+            // Map the view model to domain model
+            domainProduct = ProductMapper.ToDomainModel(productViewModel);
+            
+            // Create the product in the database
+            _productDAO.CreateProduct(domainProduct);
+        }
+
 
     }
 }
